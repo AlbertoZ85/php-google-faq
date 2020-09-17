@@ -1,5 +1,163 @@
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    height: 100px;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+    background-color: white;
+    padding: 20px 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+main {
+    max-width: 1050px;
+    margin: 100px auto 0;
+    padding: 30px;
+}
+
+footer {
+    height: 45px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #eee;
+}
+
+/* TYPO */
+h2 {
+    color: #3c4043;
+    font-weight: 500;
+}
+
+h2#privacy {
+    margin: 0 7px;
+    padding-bottom: 8px;
+}
+
+h2 a {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #5f6368;
+}
+
+/* HEADER */
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-item {
+    margin-right: 45px;
+    padding: 10px 0;
+}
+
+.header-nav-item a {
+    font-weight: 500;
+}
+
+.header-nav-item.selected {
+    border-bottom: 3px solid #3367d6;
+}
+
+.header-nav-item.selected a {
+    color: #3367d6;
+}
+
+.header-nav-item.user-account {
+    flex-grow: 1;
+    margin: 0;
+    text-align: right;
+}
+
+.header-nav-item.user-account a {
+    display: inline-block;
+}
+
+.avatar {
+    display: flex;
+}
+
+.avatar img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.avatar .user-mail {
+    line-height: 20px;
+}
+
+/* MAIN */
+.content {
+    padding-top: 60px;
+}
+
+main p {
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    font-size: 14px;
+    padding-top: 30px;
+}
+
+/* main h2+p {
+    padding-top: 20px;
+} */
+
+/* FOOTER */
+footer .container {
+    max-width: 990px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav-item a {
+    font-size: 11px;
+}
+
+.footer-nav-item:not(:first-child)::before {
+    content: '\0000b7';
+    padding: 0 5px;
+}
+
+.lang-selection {
+    padding-left: 25px;
+    background-image: url('https://www.freepngimg.com/thumb/globe/7-2-globe-png-clipart.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+select {
+    width: 10rem;
 }
