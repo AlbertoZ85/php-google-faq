@@ -127,9 +127,9 @@ main p {
     padding-top: 30px;
 }
 
-/* main h2+p {
+main h2+p {
     padding-top: 20px;
-} */
+}
 
 /* FOOTER */
 footer .container {
